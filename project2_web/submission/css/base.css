@@ -122,7 +122,6 @@ a:hover {
 	border: 1px solid #286744;
 	background: none;
 	box-shadow: none;
-	border: none;
 	
 	background-color: #286744;
 	color: #fff;
@@ -137,6 +136,11 @@ a:hover {
   /*outline-color: rgba(255, 255, 255, 0);*/
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388; 
+}
+
+.activeNav {
+	font-family:Perpetua-Bold;
+	color: #286744
 }
 
 /*** HOME PAGE CONTENT ***/
