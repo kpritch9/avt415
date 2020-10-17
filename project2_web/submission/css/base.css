@@ -70,13 +70,14 @@ h3 {
 	font-size: 16pt;
 }
 
-p {
+p, label {
 	font-family:Perpetua-Regular;
 	font-size: 14pt;
 }
 
 hr {
 	border-top: 2px solid #286744;
+	margin: 15px;
 }
 
 /*** MAIN ***/
@@ -87,6 +88,7 @@ hr {
 /*** HEADER ***/
 nav {
 	text-align:center;
+	margin-bottom: 15px;
 }
 
 .backgroundColor {	
@@ -112,6 +114,11 @@ a {
 
 a:hover {
 	color: #286744
+}
+
+#email {
+	height: 27px;
+	width:250px;
 }
 
 #emailBlock {
