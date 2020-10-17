@@ -49,7 +49,7 @@ table {
 
 /*** END CLEAR ***/
 
-/*** H CLASSES ***/
+/*** ELEMENTS ***/
 h1 {
 	font-family: Arizonia-Regular;
 	font-size: 36pt;
@@ -65,17 +65,106 @@ h2 {
 	color: #fff;
 }
 
-/*** HEADER ***/
-header {
-	padding-top: 30px;
-	background-color: #286744
+h3 {
+	font-family:Arizonia-Regular;
+	font-size: 16pt;
 }
 
+p {
+	font-family:Perpetua-Regular;
+	font-size: 14pt;
+}
+
+hr {
+	border-top: 2px solid #286744;
+}
+
+/*** MAIN ***/
+#mainContent {
+	padding: 0 100px;
+}
+
+/*** HEADER ***/
 nav {
+	text-align:center;
+}
+
+.backgroundColor {	
+	background-color: #286744;
+	padding-top: 30px;
+}
+
+#logoHeader {
 	display:block;
 	background: #286744 url(../assets/SVG/icon_booktop.svg) no-repeat top center;
 	background-size: contain;
 	height:75px;
+}
+
+a {
+	font-family: Perpetua-Regular;
+	text-decoration: none;
+	color: black;
+	font-size: 17pt;
+	padding: 0 40px 0 40px;
+	
+}
+
+a:hover {
+	color: #286744
+}
+
+#emailBlock {
+	text-align:center;
+}
+
+.button {
+	border: 1px solid #286744;
+	background: none;
+	box-shadow: none;
+	border: none;
+	
+	background-color: #286744;
+	color: #fff;
+	font-family: Perpetua-Regular;
+	font-size: 14pt;
+	padding: 5px 15px;	
+}
+
+.button:hover {
+  border: 1px solid;
+  box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+  /*outline-color: rgba(255, 255, 255, 0);*/
+  outline-offset: 15px;
+  text-shadow: 1px 1px 2px #427388; 
+}
+
+/*** HOME PAGE CONTENT ***/
+#booksBlock {
+	max-width:800px;
+	float:left;
+}
+#socialBlock {
+	float:right;
+}
+.bookExcerpt {
+	height: 350px;
+}
+
+.bookThumb {
+	width: 200px;
+	height: auto;
+}
+.bookExcerpt .bookThumb {
+	margin-right: 15px; 
+	float: left;
+}
+
+.bookExcerpt h3, 
+.bookExcerpt p {
+	margin-left: 15px;
+	display:block;
+	padding-top: 20px;
 }
 
 /*** FONTS ***/
