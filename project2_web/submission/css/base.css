@@ -103,17 +103,20 @@ nav {
 	height:75px;
 }
 
+nav a {	
+	padding: 0 40px 0 40px;
+	font-size: 17pt;
+	text-decoration: none;
+}
+
 a {
 	font-family: Perpetua-Regular;
-	text-decoration: none;
 	color: black;
-	font-size: 17pt;
-	padding: 0 40px 0 40px;
 	
 }
 
 a:hover {
-	color: #286744
+	color: #286744;
 }
 
 #email {
@@ -134,7 +137,21 @@ a:hover {
 	color: #fff;
 	font-family: Perpetua-Regular;
 	font-size: 14pt;
-	padding: 5px 15px;	
+	padding: 5px 15px;
+	text-decoration: none;
+}
+
+.disabledButton {	
+	border: 1px solid #286744;
+	background: none;
+	box-shadow: none;
+	
+	background-color: #aaa;
+	color: #fff;
+	font-family: Perpetua-Regular;
+	font-size: 14pt;
+	padding: 5px 15px;
+	text-decoration: none;
 }
 
 .button:hover {
@@ -143,6 +160,8 @@ a:hover {
   /*outline-color: rgba(255, 255, 255, 0);*/
   outline-offset: 15px;
   text-shadow: 1px 1px 2px #427388; 
+  cursor: pointer;
+  color:#fff;
 }
 
 .activeNav {
