@@ -48,13 +48,62 @@ body {
     max-width: 100%;
   }
 }
+
+
+.column-2 {
+	float:left;
+	width: 50%;
+}
+
+footer {
+	height: 100px;
+	background-color: #5B9892;
+	margin-top:50px;
+}
+
+footer #footer-logo{
+	height: 100px;
+	padding-left: 50px;
+	vertical-align:middle;
+	float:left;
+}
+
+footer p {
+	float:left;
+	padding-top:42px;
+}
+.social-icon {
+	width:30px;
+	margin-top:35px;
+}
+
+.social {
+	background-color: #5B9892;
+	text-align: right;
+	padding-right: 50px;
+	vertical-align: middle;
+}
+.little {
+	font-size: 8px;
+}
 </style>
+
+<head>
+  <meta charset="utf-8">
+  
+  <title>Best With Chocolate: Gallery</title>
+  <meta name="description" content="Image Gallery for Best With Chocolate">
+  <meta name="author" content="Katie Pritchard">
+</head>
+
+
 <body>
 
 <!-- Header -->
-<div class="header">
-  <h1>Responsive Image Grid</h1>
-  <p>Resize the browser window to see the responsive effect.</p>
+<div class="header"> 
+  <h1>Best With Chocolate</h1>
+  <p>Life can be crazy, but it's always Best With Chocolate!</p>
+  <a href="https://bestwithchocolate.com">Visit Best With Chocolate for recipes and more</a>
 </div>
 
 <!-- Photo Grid -->
@@ -66,6 +115,7 @@ body {
     <img src="./resources/HealthfulTwixBars-10.jpg" style="width:100%">
     <img src="./resources/cookies-and-cream-cookies-1.jpg" style="width:100%">
     <img src="./resources/sour-cream-chive-biscuit.jpg" style="width:100%">
+    <img src="./resources/focaccia-5.jpg" style="width:100%">
   </div>
   
   <div class="column">
@@ -94,9 +144,27 @@ body {
     <img src="./resources/smores-2.jpg" style="width:100%">
     <img src="./resources/halloween-cocktail-potions-variety-2.jpg" style="width:100%">
     <img src="./resources/cookies-and-cream-cookies-4.jpg" style="width:100%">
-    <img src="./resources/focaccia-5.jpg" style="width:100%">
   </div>
 </div>
+
+
+		<footer>
+			<div class="column-2">
+				<a href="index.html"><img id="footer-logo" src="resources/logo/KP_Logo.png"/></a>
+				<p class="little">
+					Copyright 2020. Katie Pritchard.<br />
+					All Rights Reserved.
+				</p>
+			</div>
+			<div class="column-2">
+				<div class="social">
+					<a href="https://www.facebook.com/bestwithchocolate"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 82"><defs><style>.cls-1{fill:#000;}</style></defs><title>Facebook</title><g id="facebook" class="social-icon" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/><path class="cls-1" d="M32.32,34.9H36V31.29c0-1.6,0-4.06,1.2-5.58A6.62,6.62,0,0,1,43,23a23.38,23.38,0,0,1,6.67.67l-.93,5.51a12.54,12.54,0,0,0-3-.45c-1.45,0-2.74.52-2.74,2V34.9h5.94l-.41,5.39H43V59H36V40.29H32.32Z"/></g></g></svg></a>
+					<a href="https://www.linkedin.com/in/katie-pritchard/"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 82"><defs><style>.cls-1{fill:#000;}</style></defs><title>LinkedIn</title><g id="linkedin"  data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/><path class="cls-1" d="M30.93,55.91h-7V33.43h7ZM27.24,30.62h-.05A3.9,3.9,0,0,1,23,26.72c0-2.22,1.69-3.9,4.29-3.9a3.92,3.92,0,0,1,4.23,3.9C31.52,28.9,29.87,30.62,27.24,30.62ZM59,55.91H51V44.28c0-3-1.24-5.12-4-5.12a4,4,0,0,0-3.8,2.75,5.09,5.09,0,0,0-.17,1.83V55.91H35.21s.1-20.6,0-22.47h7.88V37c.47-1.54,3-3.74,7-3.74,5,0,8.91,3.23,8.91,10.19Z"/></g></g></svg></a>
+					<a href="https://www.instagram.com/bestwithchocolate/"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 82"><defs><style>.cls-1{fill:#000;}</style></defs><title>Instagram</title><g id="instagram" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/><path class="cls-1" d="M52,23H30a7,7,0,0,0-7,7V52a7,7,0,0,0,7,7H52a7,7,0,0,0,7-7V30A7,7,0,0,0,52,23Zm2,4.15h.79v6.1l-6.08,0,0-6.1ZM35.87,37.31A6.32,6.32,0,1,1,34.67,41,6.33,6.33,0,0,1,35.87,37.31ZM55.5,52A3.45,3.45,0,0,1,52,55.48H30A3.45,3.45,0,0,1,26.51,52V37.31h5.37a9.84,9.84,0,1,0,18.24,0H55.5Z"/></g></g></svg></a>
+					<a href="https://twitter.com/bestwithchocolate"><svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 82 82"><defs><style>.cls-1{fill:#000;}</style></defs><title>Twitter</title><g id="twitter" data-name="Layer 2"><g id="Icons"><path class="cls-1" d="M41,82A41,41,0,1,1,82,41,41,41,0,0,1,41,82ZM41,2A39,39,0,1,0,80,41,39,39,0,0,0,41,2Z"/><path class="cls-1" d="M59,31.78a14.8,14.8,0,0,1-4.24,1.16A7.38,7.38,0,0,0,58,28.86a14.73,14.73,0,0,1-4.69,1.79A7.39,7.39,0,0,0,40.54,35.7a7.28,7.28,0,0,0,.19,1.68A21,21,0,0,1,25.5,29.67a7.4,7.4,0,0,0,2.29,9.86,7.4,7.4,0,0,1-3.35-.92v.09a7.39,7.39,0,0,0,5.93,7.24,7.2,7.2,0,0,1-1.95.26A7.31,7.31,0,0,1,27,46.07a7.38,7.38,0,0,0,6.9,5.13A14.94,14.94,0,0,1,23,54.26a20.92,20.92,0,0,0,11.32,3.32c13.59,0,21-11.25,21-21,0-.32,0-.64,0-1A15,15,0,0,0,59,31.78"/></g></g></svg></a>
+				</div>
+			</div>
+		</footer>
 
 </body>
 </html>
