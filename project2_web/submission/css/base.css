@@ -186,6 +186,7 @@ a:hover {
 }
 #mainRightDiv {
 	float:right;
+	max-width:400px;
 }
 .bookExcerpt {
 	height: 350px;
