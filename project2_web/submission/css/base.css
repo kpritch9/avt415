@@ -67,6 +67,11 @@ h2 {
 
 h3 {
 	font-family:Arizonia-Regular;
+	font-size: 24pt;
+}
+
+h4 {
+	font-family:Arizonia-Regular;
 	font-size: 16pt;
 }
 
@@ -78,6 +83,10 @@ p, label {
 hr {
 	border-top: 2px solid #286744;
 	margin: 15px;
+}
+
+em {
+	font-style: italic;
 }
 
 /*** MAIN ***/
@@ -170,11 +179,11 @@ a:hover {
 }
 
 /*** HOME PAGE CONTENT ***/
-#booksBlock {
+#mainLeftDiv {
 	max-width:800px;
 	float:left;
 }
-#socialBlock {
+#mainRightDiv {
 	float:right;
 }
 .bookExcerpt {
@@ -190,7 +199,7 @@ a:hover {
 	float: left;
 }
 
-.bookExcerpt h3, 
+.bookExcerpt h4, 
 .bookExcerpt p {
 	margin-left: 15px;
 	display:block;
