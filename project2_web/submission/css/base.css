@@ -190,6 +190,7 @@ a:hover {
 }
 .bookExcerpt {
 	height: 350px;
+	margin-bottom: 25px;
 }
 
 .bookThumb {
