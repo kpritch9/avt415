@@ -237,3 +237,67 @@ a:hover {
 }
 
 
+/*** CLASS STYLES ***/
+
+.align-left {
+	text-align:left;
+}
+
+.align-right {
+	text-align:right;
+}
+
+.align-center {
+	text-align:center;
+}
+
+.column-2 {
+	float: left;
+	width: 50%;
+}
+	
+.signature {		
+	font-family:Arizonia-Regular;
+	font-size: 18pt;
+	text-align: right;
+	margin-top: 0px;
+}
+
+/*** FOOTER ***/
+
+footer {
+	background-color: #286744;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	padding: 20px 0px;;
+	width: 100%;
+	overflow: hidden;
+	color: #fff;
+}
+html {
+	position: relative;
+	min-height: 100%;
+}
+
+.small {
+	font-family: Perpetua-Regular;
+	font-size: 10pt;
+	text-align:center;
+	color: #fff;
+	padding-left:20px;
+}
+#copyright {
+	font-size:10.9px;
+	padding-top:5px;
+}
+
+.padding-20 {
+	padding: 0px 20px;
+}
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #A8CDA2;
+}
