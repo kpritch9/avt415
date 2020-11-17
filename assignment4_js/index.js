@@ -25,7 +25,7 @@ class Board extends React.Component {
     return (<Square
 				winCombo={this.props.winCombo}
 				isXNext={this.props.isXNext}
-				id={i.ToString()}
+				id={i.toString()}
 				value={this.props.squares[i]} 
 				onClick = {() => this.props.onClick(i)}
 		   />);
