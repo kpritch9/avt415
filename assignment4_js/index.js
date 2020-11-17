@@ -9,6 +9,7 @@ function Square(props) {
 class Board extends React.Component {
   renderSquare(i) {
     return (<Square 
+				className={className}
 				value={this.props.squares[i]} 
 				onClick = {() => this.props.onClick(i)}
 		   />);
@@ -93,6 +94,8 @@ class Game extends React.Component {
     });
 	  
 	  let status;
+	  console.log(this.state.stepNumber);
+	  console.log(history.length);
 	  if (this.state.stepNumber == history.length) {
 		  status = "This game is a draw.";
 	  } else if (winner) {
