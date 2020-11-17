@@ -1,6 +1,9 @@
 function Square(props) {
+	
+	let className = 'square';
+	className += 'square-win';
 	return (
-		<button className="square" onClick={props.onClick}>
+		<button className={className} onClick={props.onClick}>
 			{props.value}
 		</button>
 	);
@@ -8,9 +11,7 @@ function Square(props) {
 
 class Board extends React.Component {
   renderSquare(i) {
-	let className = 'square-win';
-    return (<Square 
-				className={className}
+    return (<Square
 				value={this.props.squares[i]} 
 				onClick = {() => this.props.onClick(i)}
 		   />);
