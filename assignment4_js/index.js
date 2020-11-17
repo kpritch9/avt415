@@ -46,7 +46,7 @@ class Game extends React.Component {
         squares: Array(9).fill(null)
       }],
       isXNext: true,
-	  stepNumber: 0;
+	  stepNumber: 0,
     };
   }
   
