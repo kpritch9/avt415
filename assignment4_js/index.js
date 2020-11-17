@@ -28,15 +28,6 @@ class Board extends React.Component {
   }
 
   render() {
-	  
-	  const winner = calculateWinner(this.state.squares);
-	  let status;
-	  if (winner) {
-		status = "Winner: " + winner;
-	  } else {
-		  status = 'Next player: ' + (this.state.isXNext ? 'X' : 'O');
-	  }
-
     return (
       <div>
         <div className="status">{status}</div>
@@ -74,7 +65,6 @@ class Game extends React.Component {
 	  const history = this.state.history;
 	  const current = history[history.length - 1];
 	  const winner = calculateWinner(current.squares);
-	  
 	  let status;
 	  if(winner) {
 		  status = "Winner: " + winner;
