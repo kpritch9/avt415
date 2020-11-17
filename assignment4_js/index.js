@@ -21,7 +21,7 @@ class Board extends React.Component {
 		if (squares[i] != null)
 			return;
 		
-		squares[i] = this.state.isXNext ? 'X' : "O";
+		squares[i] = this.state.isXNext ? 'X' : 'O';
 		this.setState({
 			squares: squares,
 			isXNext: !this.state.isXNext,
