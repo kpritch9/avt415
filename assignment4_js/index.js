@@ -1,7 +1,7 @@
 function Square(props) {
 	
 	let className = 'square ';
-	if (props.isXNext) {
+	if (props.value == 'X') {
 		className += 'x-style'
 	} else {
 		className += 'o-style'
