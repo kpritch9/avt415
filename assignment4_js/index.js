@@ -11,7 +11,7 @@ class Board extends React.Component {
 		super(props);
 		this.state = {
 			squares: Array(9).fill(null),
-			isXNext: !this.state.IsXNext,
+			isXNext: true,
 		};
 	}
 	
