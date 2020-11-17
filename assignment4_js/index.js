@@ -1,6 +1,7 @@
 function Square(props) {
 	
 	let className = 'square ';
+	console.log(this.state.winnerIndexes);
 	className += 'square-win ';
 	return (
 		<button className={className} onClick={props.onClick}>
@@ -50,6 +51,7 @@ class Game extends React.Component {
       }],
       isXNext: true,
 	  stepNumber: 0,
+	  winnerIndexes: null,
     };
   }
   
@@ -57,6 +59,7 @@ class Game extends React.Component {
 	this.setState({
 		stepNumber: step,
 		isXNext: (step % 2) === 0,
+		winnerIndexes: null,
 	});
   }
 
@@ -64,10 +67,17 @@ class Game extends React.Component {
     const history = this.state.history.slice(0, this.state.stepNumber + 1);
     const current = history[history.length - 1];
     const squares = current.squares.slice();
+	const winners = calculateWinner(squares);
 	
-    if (calculateWinner(squares) || squares[i]) {
+    if (squares[i]) {
       return;
-    }
+    } else if (winners)
+	{
+		this.setState({
+			winnerIndexes: winners
+		)};
+		return;
+	}
 	
     squares[i] = this.state.isXNext ? 'X' : 'O';
     this.setState({
