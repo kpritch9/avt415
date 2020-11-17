@@ -8,9 +8,9 @@ function Square(props) {
 	}
 	console.log(props.winCombo);
 	if (props.winCombo && 
-			(props.winCombo[0] == props.id ||
-			 props.winCombo[1] == props.id ||
-			 props.winCombo[2] == props.id))
+			(props.winCombo[1][0] == props.id ||
+			 props.winCombo[1][1] == props.id ||
+			 props.winCombo[1][2] == props.id))
 		className +=  'square-winner';
 		
 	return (
@@ -156,7 +156,7 @@ function calculateWinner(squares) {
   for (let i = 0; i < lines.length; i++) {
     const [a, b, c] = lines[i];
     if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
-      return squares[a];
+      return [squares[a], lines[i]];
     }
   }
   return null;
