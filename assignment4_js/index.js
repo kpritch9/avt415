@@ -1,8 +1,11 @@
 function Square(props) {
 	
 	let className = 'square ';
-	console.log(this.state.winnerIndexes);
-	className += 'square-win ';
+	if (this.state.isXNext) {
+		className += 'x-style'
+	} else {
+		className += 'o-style'
+	}
 	return (
 		<button className={className} onClick={props.onClick}>
 			{props.value}
@@ -73,9 +76,6 @@ class Game extends React.Component {
       return;
     } else if (winners)
 	{
-		this.setState({
-			winnerIndexes: winners,
-		)};
 		return;
 	}
 	
