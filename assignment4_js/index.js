@@ -6,7 +6,7 @@ function Square(props) {
 	} else {
 		className += 'o-style'
 	}
-	
+	console.log(props.winCombo);
 	if (props.winCombo && 
 			(props.winCombo[0] == props.id ||
 			 props.winCombo[1] == props.id ||
