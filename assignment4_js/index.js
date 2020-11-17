@@ -6,6 +6,13 @@ function Square(props) {
 	} else {
 		className += 'o-style'
 	}
+	
+	if (props.winCombo && 
+			(props.winCombo[1][0] == props.id ||
+			 props.winCombo[1][1] == props.id ||
+			 props.winCombo[1][2] == props.id))
+		className +=  'square-winner';
+		
 	return (
 		<button className={className} onClick={props.onClick}>
 			{props.value}
@@ -16,6 +23,8 @@ function Square(props) {
 class Board extends React.Component {
   renderSquare(i) {
     return (<Square
+				winCombo={this.props.winCombo}
+				isXNext={this.props.isXNext}
 				value={this.props.squares[i]} 
 				onClick = {() => this.props.onClick(i)}
 		   />);
@@ -54,7 +63,7 @@ class Game extends React.Component {
       }],
       isXNext: true,
 	  stepNumber: 0,
-	  winnerIndexes: null,
+	  winCombo: null,
     };
   }
   
@@ -62,7 +71,7 @@ class Game extends React.Component {
 	this.setState({
 		stepNumber: step,
 		isXNext: (step % 2) === 0,
-		winnerIndexes: null,
+		winCombo: null,
 	});
   }
 
@@ -117,6 +126,7 @@ class Game extends React.Component {
 	  <div className="game">
 		<div className="game-board">
 		  <Board 
+			winCombo={winner}
 			squares={current.squares}
 			onClick={(i) => this.handleClick(i)}
 		  />
