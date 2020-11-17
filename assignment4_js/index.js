@@ -6,12 +6,12 @@ function Square(props) {
 	} else {
 		className += 'o-style'
 	}
-	console.log(props.winCombo);
+	
 	if (props.winCombo && 
 			(props.winCombo[1][0] == props.id ||
 			 props.winCombo[1][1] == props.id ||
 			 props.winCombo[1][2] == props.id))
-		className +=  'square-winner';
+		className +=  'square-win';
 		
 	return (
 		<button id={props.id} className={className} onClick={props.onClick}>
