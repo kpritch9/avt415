@@ -74,7 +74,7 @@ class Game extends React.Component {
     } else if (winners)
 	{
 		this.setState({
-			winnerIndexes: winners
+			winnerIndexes: winners,
 		)};
 		return;
 	}
