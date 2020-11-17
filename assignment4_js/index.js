@@ -2,9 +2,9 @@ function Square(props) {
 	
 	let className = 'square ';
 	if (props.value == 'X') {
-		className += 'x-style'
+		className += 'x-style '
 	} else {
-		className += 'o-style'
+		className += 'o-style '
 	}
 	
 	if (props.winCombo && 
@@ -117,7 +117,7 @@ class Game extends React.Component {
 	  
 	  let status;
 	  if (winner) {
-		  status = "Winner: " + winner;
+		  status = "Winner: " + winner[0];
 	  } else if (this.state.stepNumber == 9) {
 		  status = "This game is a draw.";
 	  } else {
