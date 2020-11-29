@@ -208,6 +208,25 @@ a:hover {
 	margin: 0 auto;
 	display:inline-block;
 	margin-top: 100px;
+	position: relative;
+}
+
+#emailSignup {
+	background: url(../assets/page/bookmark.svg) no-repeat top right;
+	background-size: 55px;
+	width:55px;
+	height:100px;	
+	float: left;
+	position: absolute;
+	top: -48px;
+	right: 35px;
+}
+
+#emailSignup>p {
+	color: #fff;
+	text-decoration: none;
+	padding: 20px 0;
+	text-align:center;
 }
 
 /*** HOME PAGE CONTENT ***/
