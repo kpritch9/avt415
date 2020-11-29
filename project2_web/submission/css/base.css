@@ -93,6 +93,14 @@ hr {
 em {
 	font-style: italic;
 }
+	
+ul {
+	margin-left: 40px;
+}
+
+li {
+	margin: 5px 0;
+}
 
 /*** MAIN ***/
 #mainContent {
@@ -255,13 +263,13 @@ a:hover {
 }
 
 /*** HOME PAGE CONTENT ***/
-#mainLeftDiv, .leftDiv {
+.leftDiv {
 	max-width: 550px;
 	float:left;
 	min-height: 300px;
 	padding-right: 50px;
 }
-#mainRightDiv, .rightDiv {
+.rightDiv {
 	float:right;
 	max-width:400px;
 	min-height: 300px;
