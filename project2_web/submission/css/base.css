@@ -98,7 +98,7 @@ em {
 
 /*** HEADER ***/
 nav {
-	margin: -125px 0px 15px 0px;
+	margin: -150px 0px 15px 0px;
 }
 nav ul {	
 	display: flex;
@@ -124,14 +124,15 @@ nav ul {
 
 nav a {	
 	padding: 0 40px 0 40px;
-	font-size: 17pt;
+	font-size: 20pt;
 	text-decoration: none;
 	display: block;
 }
 
 a {
-	font-family: TwCenMT-Condensed-Bold;
+	font-family: TwCenMT-Condensed;
 	color: #286744;	
+	font-weight:bold;
 }
 
 a:hover {
@@ -185,8 +186,10 @@ a:hover {
 }
 
 .activeNav {
-	font-family:TwCenMT-Condensed-Bold;
+	font-family:TwCenMT-Condensed;
 	color: #fff;
+	font-weight:bold;
+	
 }
 
 #bookBackground {	
@@ -292,16 +295,6 @@ a:hover {
     src: url("../assets/fonts/TwCenMT/TCCM.TTF") format("opentype");
 }
 
-@font-face {
-    font-family: TwCenMT-Condensed-Bold;
-    src: url("../assets/fonts/TwCenMT/TCCB.TTF") format("opentype");
-}
-
-@font-face {
-    font-family: TwCenMT-Condensed-ExtraBold;
-    src: url("../assets/fonts/TwCenMT/TCCBEB.TTF") format("opentype");
-}
-
 
 /*** CLASS STYLES ***/
 
@@ -363,6 +356,7 @@ html {
 }
 footer a {
 	color: #fff;
+	font-weight: normal;
 }
 footer a:hover {
 	color: #A8CDA2;
