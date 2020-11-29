@@ -60,26 +60,29 @@ h1 {
 }
 
 h2 {
-	font-family: Perpetua-Regular;
+	font-family:Perpetua-Regular;
 	font-size: 14pt;
-	text-align:center;
 	color: #fff;
+	text-align: center;
 }
 
 h3 {
-	font-family:Arizonia-Regular;
-	font-size: 24pt;
-	margin-top: 20px;
+	font-family: TwCenMT-Condensed;
+	font-size: 28pt;
+	color: #286744;
+	padding-bottom: 15px;
+	font-weight: bold;
 }
 
 h4 {
 	font-family:Arizonia-Regular;
-	font-size: 16pt;
+	font-size: 24pt;
+	margin: 20px 0;
 }
 
 p, label, li {
 	font-family:TwCenMT-Condensed;
-	font-size: 14pt;
+	font-size: 16pt;
 }
 
 hr {
@@ -120,6 +123,8 @@ nav ul {
 	background-size: 300px;
 	height:150px;
 	padding-top: 38px;
+	position: relative;
+	z-index: 1;
 }
 
 nav a {	
@@ -127,12 +132,12 @@ nav a {
 	font-size: 20pt;
 	text-decoration: none;
 	display: block;
+	font-weight:bold;
 }
 
 a {
 	font-family: TwCenMT-Condensed;
 	color: #286744;	
-	font-weight:bold;
 }
 
 a:hover {
@@ -195,8 +200,6 @@ a:hover {
 #bookBackground {	
 	background: url(../assets/page/book.svg) no-repeat top center;
 	background-size: 1000px;
-	position: relative;
-	z-index: -1;
 	min-height: 100px;
 	
 	display: flex;
@@ -212,6 +215,8 @@ a:hover {
 	display:inline-block;
 	margin-top: 100px;
 	position: relative;
+	padding-top: 75px;
+	padding-bottom: 100px;
 }
 
 #emailSignup {
@@ -232,6 +237,17 @@ a:hover {
 	text-align:center;
 }
 
+#emailSignup:hover {
+	cursor: pointer;
+    -webkit-filter: drop-shadow( 3px 3px 2px rgba(0,0,0,.7) );
+            filter: drop-shadow( 3px 3px 2px rgba(0,0,0,.7) ); /* Same syntax as box-shadow */
+	text-decoration: underline;
+	color: white;
+}
+
+#emailTrigger:hover {	
+}
+
 /*** HOME PAGE CONTENT ***/
 #mainLeftDiv {
 	max-width:800px;
@@ -249,10 +265,7 @@ a:hover {
 .bookThumb {
 	width: 200px;
 	height: auto;
-}
-.bookExcerpt .bookThumb {
-	margin-right: 15px; 
-	float: left;
+	margin: 30px;
 }
 
 .bookExcerpt h4, 
@@ -260,6 +273,11 @@ a:hover {
 	margin-left: 15px;
 	display:block;
 	padding-top: 20px;
+}
+
+#news {
+	border: #286744 double;
+	padding: 20px;
 }
 
 /*** FONTS ***/
@@ -293,6 +311,11 @@ a:hover {
 @font-face {
     font-family: TwCenMT-Condensed;
     src: url("../assets/fonts/TwCenMT/TCCM.TTF") format("opentype");
+}
+
+@font-face {
+    font-family: TwCenMT;
+    src: url("../assets/fonts/TwCenMT/TCM.TTF") format("opentype");
 }
 
 
@@ -357,6 +380,7 @@ html {
 footer a {
 	color: #fff;
 	font-weight: normal;
+	font-family: TwCenMT-Condensed;
 }
 footer a:hover {
 	color: #A8CDA2;
