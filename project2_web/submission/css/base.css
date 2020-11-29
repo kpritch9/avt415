@@ -102,6 +102,8 @@ em {
 /*** HEADER ***/
 nav {
 	margin: -150px 0px 15px 0px;
+	position: relative;
+	z-index:5;
 }
 nav ul {	
 	display: flex;
@@ -228,13 +230,17 @@ a:hover {
 	position: absolute;
 	top: -48px;
 	right: 35px;
+	z-index: 10;
 }
 
-#emailSignup>p {
+#emailTrigger {
 	color: #fff;
 	text-decoration: none;
 	padding: 20px 0;
 	text-align:center;
+	font-family:TwCenMT-Condensed;
+	font-size: 16pt;
+	padding: 20px 5px;
 }
 
 #emailSignup:hover {
@@ -250,12 +256,15 @@ a:hover {
 
 /*** HOME PAGE CONTENT ***/
 #mainLeftDiv {
-	max-width:800px;
+	max-width: 550px;
 	float:left;
+	min-height: 300px;
+	padding-right: 50px;
 }
 #mainRightDiv {
 	float:right;
 	max-width:400px;
+	min-height: 300px;
 }
 .bookExcerpt {
 	height: 350px;
@@ -275,7 +284,7 @@ a:hover {
 	padding-top: 20px;
 }
 
-#news {
+.newsBox {
 	border: #286744 double;
 	padding: 20px;
 }
