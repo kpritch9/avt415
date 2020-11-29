@@ -212,13 +212,13 @@ a:hover {
 #mainContent {
 	width: 800px;
 	background-color: white;
-	height:1000px;
+	min-height:200px;
 	margin: 0 auto;
 	display:inline-block;
 	margin-top: 100px;
 	position: relative;
 	padding-top: 75px;
-	padding-bottom: 100px;
+	padding-bottom: 150px;
 }
 
 #emailSignup {
@@ -255,13 +255,13 @@ a:hover {
 }
 
 /*** HOME PAGE CONTENT ***/
-#mainLeftDiv {
+#mainLeftDiv, .leftDiv {
 	max-width: 550px;
 	float:left;
 	min-height: 300px;
 	padding-right: 50px;
 }
-#mainRightDiv {
+#mainRightDiv, .rightDiv {
 	float:right;
 	max-width:400px;
 	min-height: 300px;
@@ -274,7 +274,6 @@ a:hover {
 .bookThumb {
 	width: 200px;
 	height: auto;
-	margin: 30px;
 }
 
 .bookExcerpt h4, 
@@ -287,6 +286,8 @@ a:hover {
 .newsBox {
 	border: #286744 double;
 	padding: 20px;
+	display:inline-block;
+	width:100%;
 }
 
 /*** FONTS ***/

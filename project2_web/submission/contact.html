@@ -34,55 +34,58 @@
 
 <body> 
 	<header>
-	<div class="backgroundColor">
-		<h2>best-selling author</h2>
-		<h1>Wayne Grant</h1>
-		<div id="logoHeader"></div>
-	</div>
+		<div id="nameplate">
+			<h2>best-selling author</h2>
+			<h1>Wayne Grant</h1>
+		</div>
 		<nav>
-			<a href="./index.html">books</a>
-			<a href="./about.html">about</a>
-			<a class="activeNav" href="./contact.html">contact</a>
-			<a href="./booksforboys.html">books for boys</a>
-			<a href="./historicalresearch.html">historical research</a>		
+			<ul>
+				<li class="leftNav">
+					<a href="./index.html">BOOKS</a>
+					<a href="./about.html">ABOUT</a>
+					<a class="activeNav" href="./contact.html">CONTACT</a>
+				</li>
+				<li class="rightNav">
+					<a href="./booksforboys.html">BOOKS FOR BOYS</a>
+					<a href="./historicalresearch.html">HISTORICAL RESEARCH</a>
+				</li>
+			</ul>
 		</nav>
 	</header>
-	<div id="mainContent">
-		<div id="emailBlock">
-			<hr/>
-			<label for="email" style="padding-right:15px;">Sign up for updates!</label>
-			<input type="text" id="email"  placeholder="Your email address" />
-			<input type="button" value="Subscribe" class="button" />
-			<hr/>
-		</div>
-		<div id="mainLeftDiv">
-			
-			<div id="contact" class="section">
-				<h3>Get In Touch</h3>
-				<p>
-					Have questions about the books or the history behind the books?  Please reach out, and don't forget to sign up for updates to keep up with the latest news.
-				</p>
-				<div class="social"></div>
-				<div class="form">
-					<input type="text" placeholder="Name" class="column-2" />
-					<input type="text" placeholder="Email" class="full-width" />
-					<input type="text" placeholder="Subject" class="full-width" />
-					<textarea placeholder="Message" class="full-width"></textarea>
-					<br />
-					<a href="#" id="contact_submit" class="button">Submit</a>
-				</div>
+	<div id="bookBackground">
+		<div id="mainContent">
+			<div id="emailSignup">
+				<div id="emailTrigger">EMAIL SIGNUP</div>
 			</div>
-			<br /><br />
-			<br /><br />
-			<br /><br />
-			<br /><br />
-			<br /><br />
-			<br /><br />
-			<br /><br />
-			<br /><br />
-		</div>
-		<div id="mainRightDiv">			
-				<img style="width: 400px" src="./assets/wayne.jpg" alt="Wayne Grant, author"/>
+			<div id="mainLeftDiv">
+				
+				<div id="contact" class="section">
+					<h3>Get In Touch</h3>
+					<p>
+						Have questions about the books or the history behind the books?  Please reach out, and don't forget to sign up for updates to keep up with the latest news.
+					</p>
+					<div class="social"></div>
+					<div class="form">
+						<input type="text" placeholder="Name" class="column-2" />
+						<input type="text" placeholder="Email" class="full-width" />
+						<input type="text" placeholder="Subject" class="full-width" />
+						<textarea placeholder="Message" class="full-width"></textarea>
+						<br />
+						<a href="#" id="contact_submit" class="button">Submit</a>
+					</div>
+				</div>
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+				<br /><br />
+			</div>
+			<div id="mainRightDiv">			
+					<img style="width: 200px; margin: 110px 0px;" src="./assets/wayne.jpg" alt="Wayne Grant, author"/>
+			</div>
 		</div>
 	</div>
 	
