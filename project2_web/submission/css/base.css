@@ -386,7 +386,13 @@ nav a:hover {
 }
 
 
-/*** CLASS STYLES ***/
+/*** CLASS STYLES ***/	
+.signature {		
+	font-family:Arizonia-Regular;
+	font-size: 18pt;
+	text-align: right;
+	margin-top: 0px;
+}
 
 .align-left {
 	text-align:left;
@@ -414,13 +420,6 @@ nav a:hover {
 		display:block;
 	}
 }
-	
-.signature {		
-	font-family:Arizonia-Regular;
-	font-size: 18pt;
-	text-align: right;
-	margin-top: 0px;
-}
 
 /*** FOOTER ***/
 
@@ -434,6 +433,14 @@ footer {
 	overflow: hidden;
 	color: #fff;
 }
+
+@media screen and (max-width: 1200px) {
+	.signature, footer > div {
+		text-align: center !important;
+	}
+	
+}
+
 html {
 	position: relative;
 	min-height: 100%;
