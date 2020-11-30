@@ -147,6 +147,10 @@ li {
 	.leftNav, .rightNav {
 		display: flex;
 	}
+	
+	#mobile_emailBlock {
+		display: none;
+	}
 }
 @media screen and (max-width: 1200px) {
 	nav ul {
@@ -156,6 +160,9 @@ li {
 	}
 	#emailSignup {
 		display: none;
+	}
+	#mobile_emailBlock {
+		display: block;
 	}
 }
 
@@ -201,8 +208,12 @@ nav a:hover {
 	width:250px;
 }
 
-#emailBlock {
+#mobile_emailBlock {
 	text-align:center;
+}
+
+#mobile_emailBlock > .button {
+	width: 100px;
 }
 
 .button {
