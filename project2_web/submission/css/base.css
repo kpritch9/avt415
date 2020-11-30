@@ -79,6 +79,13 @@ h4 {
 	font-size: 24pt;
 	margin: 20px 0;
 }
+h5 {
+	font-family: TwCenMT-Condensed;
+	font-size: 27px;
+	color: #286744;
+	font-weight: bold;
+	
+}
 
 p, label, li {
 	font-family:TwCenMT-Condensed;
