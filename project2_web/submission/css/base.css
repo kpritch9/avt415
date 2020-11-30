@@ -151,8 +151,11 @@ a {
 }
 
 a:hover {
-	color: #fff;
+	color: #a8cca2;
 	text-decoration: underline;
+}
+nav a:hover {
+	color: #fff;
 }
 
 #email {
