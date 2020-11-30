@@ -103,24 +103,62 @@ li {
 }
 
 /*** MAIN ***/
-#mainContent {
-	padding: 0 100px;
+@media screen and (min-width: 1200px) {
+	#mainContent {
+		padding: 0 100px;
+		width: 800px;
+		background-color: white;
+		min-height:200px;
+		margin: 0 auto;
+		display:inline-block;
+		margin-top: 100px;
+		position: relative;
+		padding-top: 75px;
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	#mainContent {
+		padding: 0 100px;
+		background-color: white;
+		min-height:200px;
+		margin: 0 auto;
+		display:inline-block;
+		position: relative;
+		padding-top: 75px;
+		padding-bottom: 150px;
+	}
 }
 
 /*** HEADER ***/
-nav {
-	margin: -150px 0px 15px 0px;
-	position: relative;
-	z-index:5;
+
+@media screen and (min-width: 1200px) {
+	nav {
+		margin: -150px 0px 15px 0px;
+		position: relative;
+		z-index:5;
+	}
+	nav ul {	
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	.leftNav, .rightNav {
+		display: flex;
+	}
 }
-nav ul {	
-	display: flex;
-	justify-content: space-between;
+@media screen and (max-width: 1200px) {
+	nav ul {
+	list-style-type:none;	
+	text-align: center;
+		margin: 0;
+	}
+	#emailSignup {
+		display: none;
+	}
 }
 
-.leftNav, .rightNav {
-	display: flex;
-}
 
 .backgroundColor {	
 	background-color: #286744;
@@ -210,26 +248,16 @@ nav a:hover {
 	
 }
 
-#bookBackground {	
-	background: url(../assets/page/book.svg) no-repeat top center;
-	background-size: 1000px;
-	min-height: 100px;
-	
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-#mainContent {
-	width: 800px;
-	background-color: white;
-	min-height:200px;
-	margin: 0 auto;
-	display:inline-block;
-	margin-top: 100px;
-	position: relative;
-	padding-top: 75px;
-	padding-bottom: 150px;
+@media screen and (min-width: 1200px) {
+	#bookBackground {	
+		background: url(../assets/page/book.svg) no-repeat top center;
+		background-size: 1000px;
+		min-height: 100px;
+		
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 #emailSignup {
@@ -266,16 +294,33 @@ nav a:hover {
 }
 
 /*** HOME PAGE CONTENT ***/
-.leftDiv {
-	max-width: 550px;
-	float:left;
-	min-height: 300px;
-	padding-right: 50px;
+
+@media screen and (min-width: 1200px) {
+	.leftDiv {
+		max-width: 550px;
+		float:left;
+		min-height: 300px;
+		padding-right: 50px;
+	}
+
+	.rightDiv {
+		float:right;
+		max-width:400px;
+		min-height: 300px;
+	}
 }
-.rightDiv {
-	float:right;
-	max-width:400px;
-	min-height: 300px;
+
+
+@media screen and (max-width: 1200px) {
+	.leftDiv {
+		display:block;
+		text-align:center;
+	}
+
+	.rightDiv {
+		display:block;
+		text-align:center;
+	}
 }
 .bookExcerpt {
 	height: 350px;
@@ -355,9 +400,19 @@ nav a:hover {
 	text-align:center;
 }
 
-.column-2 {
-	float: left;
-	width: 50%;
+@media screen and (min-width: 1200px) {
+	.column-2 {
+		float: left;
+		width: 50%;
+	}
+}
+
+
+@media screen and (max-width: 1200px) {
+	.column-2 {
+		width:100%;
+		display:block;
+	}
 }
 	
 .signature {		
