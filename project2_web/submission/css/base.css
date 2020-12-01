@@ -106,6 +106,10 @@ ul {
 	margin-left: 40px;
 }
 
+.bulletList {	
+	list-style: square;
+}
+
 li {
 	margin: 5px 0;
 }
