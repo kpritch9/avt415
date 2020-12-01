@@ -114,7 +114,7 @@ li {
 @media screen and (min-width: 1200px) {
 	#mainContent {
 		padding: 0 100px;
-		width: 800px;
+		width: 1000px;
 		background-color: white;
 		min-height:200px;
 		margin: 0 auto;
@@ -152,8 +152,14 @@ li {
 		justify-content: space-between;
 	}
 	
-	.leftNav, .rightNav {
+	.leftNav {
 		display: flex;
+		padding-right:130px;
+	}
+	
+	.rightNav {
+		display: flex;
+		padding-left:130px;
 	}
 	
 	#mobile_emailBlock {
@@ -184,7 +190,7 @@ li {
 	display:block;
 	background: url(../assets/page/nameplate.svg) no-repeat top center;
 	background-size: 300px;
-	height:150px;
+	height:175px;
 	padding-top: 38px;
 	position: relative;
 	z-index: 1;
@@ -263,7 +269,6 @@ nav a:hover {
 .activeNav {
 	font-family:TwCenMT-Condensed;
 	color: #fff;
-	font-weight:bold;
 	
 }
 
@@ -444,7 +449,6 @@ nav a:hover {
 
 footer {
 	background-color: #286744;
-	position: absolute;
 	left: 0;
 	bottom: 0;
 	padding: 20px 0px;;
@@ -511,7 +515,7 @@ footer a:hover {
   border: 1px solid #888;
   width: 50%;
   margin-top:150px;
-  min-height:275px;
+  min-height:325px;
 }
 
 
