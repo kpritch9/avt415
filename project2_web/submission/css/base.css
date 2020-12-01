@@ -416,6 +416,7 @@ nav a:hover {
 	font-size: 18pt;
 	text-align: right;
 	margin-top: 0px;
+	margin-bottom: 10px;
 }
 
 .align-left {
@@ -442,6 +443,7 @@ nav a:hover {
 	.column-2 {
 		width:100%;
 		display:block;
+		padding-bottom:10px;
 	}
 }
 
