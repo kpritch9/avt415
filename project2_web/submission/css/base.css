@@ -458,7 +458,7 @@ footer {
 	overflow: hidden;
 	color: #fff;
 	display:block;
-	position: fixed;
+	position: relative;
 }
 
 @media screen and (max-width: 1200px) {
@@ -469,7 +469,6 @@ footer {
 }
 
 html {
-	position: relative;
 	min-height: 100%;
 }
 
